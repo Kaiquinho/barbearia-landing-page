@@ -1,0 +1,171 @@
+/*cores 
+RED 1 - #BA181B
+RED 2 - #E5383B
+BLACK 1 - #0B090A
+BLACK 2 - #161A1D
+WHITE 1 - #FFFFFF 
+*/
+
+/*  LAYOUT GENÉRICO */
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    color: #0B090A; /*TEMPORARIO*/
+}
+.btn{
+    padding: 20px 40px; /*12px em cima e embaixo, 24px dos lados. Essa é a regra*/
+    background-color: transparent;
+    color: #FFFFFF;
+    text-transform: uppercase; /*Deixa em maiusculo ou minusculo*/
+    font-size: 1.1rem;
+}
+.btn-small{
+    padding: 12px 24px;
+    font-size: 0.9rem;
+}
+.btn-primary{
+    /* margin-top: 50px; */
+    background-color: #BA181B;
+}
+.btn-outline{
+    border: solid 2px #FFFFFF;
+    background-color: transparent;
+}
+.overtitle{
+    font-size: 16px;
+    line-height: 24px;
+    color: #E5383B;
+    font-size: 700;
+    text-transform: uppercase;
+
+}
+.title{
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 700;
+}
+
+
+/* LAYOUT ESPECIFICO */
+
+.header{
+    background-color: #0B090A;
+    color: #FFFFFF;
+    padding: 24px 72px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#header-container{
+    background-color: #0B090A;
+}
+
+/* HERO SECTION */
+#hero-container{
+    /* display: flex; */
+    padding: 0 72px;
+    background-color: #0B090A;
+    color: #FFFFFF
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.hero-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 96px 0;
+}
+.hero-image{
+    flex: 1;
+    align-self: flex-end;
+}
+
+.hero-image img{ /*pegando a imagem dentro da class hero-image, basicamente uma pseudo-class*/
+    max-width: 100%;
+}
+.hero-text__title{
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+}
+.hero-text_subtitle{
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 520px;
+}
+
+/* SECTION SERVICES */
+#services-container{
+    padding: 96px 24px;
+}
+.services-list{
+    margin-top: 48px;
+    display: flex;
+    gap: 32px;
+}
+.service-card{
+    background-color: #F5F3F4;
+    border: 2px solid #D3D3D3;
+}
+.service-card img{ /*Agora tratando a imagem dentro do card*/
+    width: 100%;
+}
+.service-card__text{
+    padding: 32px;
+
+}
+.service-card__text h3{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.service-card__text p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* LOCATION SECTION */
+#location-container{
+    background-color: #F5F3F4;
+    padding: 48px 24px 0; /*48 em cima, 72 laterais e 0 em baixo*/
+}
+#location-container header{
+    padding: 48px;
+}
+#location-container address{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* FOOTER SECTION */
+.rodape{
+    color: rgb(182, 182, 182);
+    background-color: #161A1D;
+    padding: 10px;
+}
+.rodape-container{
+    display: flex;  
+    justify-content: space-around;  
+}
+/* .right-side{
+    
+}
+.left-side{
+
+} */
